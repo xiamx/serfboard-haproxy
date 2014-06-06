@@ -1,0 +1,11 @@
+---
+
+name: haproxy
+maintainer: xiamx
+description: example of event handler that orchestrates haproxy
+version: 1.0
+handlers:
+  - event: member-join
+    script: 'join.py'
+  - event: member-leave
+    script: 'leave.py'
